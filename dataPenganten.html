@@ -18,12 +18,18 @@
                 >Template Undangan</a
               >
             </li>
-            <li><a href="#chart">Pesanan Saya</a></li>
+            <li>
+              <a
+                href="D:\Kuliah Informatika\Semester 5\RPL\viewBlade tubes\Pesanan saya\pesanan-terverifikasi.html"
+                >Pesanan Saya</a
+              >
+            </li>
           </ul>
         </div>
         <ul class="cart">
           <li>
-            <a href="#"
+            <a
+              href="D:\Kuliah Informatika\Semester 5\RPL\viewBlade tubes\Keranjang Belanja\keranjangBelanja.html"
               ><img
                 src="D:\Kuliah Informatika\Semester 5\RPL\viewBlade tubes\shop cart.png"
             /></a>
@@ -51,8 +57,12 @@
       <!-- SECTION : DATA ACARA -->
 
       <div class="content">
-        <h1>data acara</h1>
         <div class="isiData">
+          <a
+            href="D:\Kuliah Informatika\Semester 5\RPL\viewBlade tubes\Keranjang Belanja\keranjangBelanja.html"
+            ><img src="back button.png" alt=""
+          /></a>
+          <h1>data acara</h1>
           <label>
             <p><b>nama mempelai laki-laki</b></p>
             <input type="text" id="data" name="mempelai laki laki" />
@@ -78,6 +88,10 @@
             <input type="text" id="data" name="mempelai laki laki" />
           </label>
           <label>
+            <p><b>lokasi acara</b></p>
+            <input type="text" id="data" name="mempelai laki laki" />
+          </label>
+          <label>
             <p><b>tanggal resepsi</b></p>
             <input type="date" id="data" name="mempelai laki laki" />
           </label>
@@ -91,11 +105,21 @@
             <input type="file" id="vidio_input" />
           </label>
           <div class="button-simpan">
-            <form action="/action_page.php">
-              <button class="home-button button" type="submit">
-                Simpan Data Acara
-              </button>
-            </form>
+            <button
+              class="home-button button"
+              type="submit"
+              onclick="openPopup()"
+            >
+              Simpan Data Acara
+            </button>
+          </div>
+          <div class="popup" id="popup">
+            <img src="Vector.png" />
+            <h3>Data Acara Berhasil Tersimpan</h3>
+            <a
+              href="D:\Kuliah Informatika\Semester 5\RPL\viewBlade tubes\invoice\invoice.html"
+              ><button type="button" onclick="closePopup()">OK</button></a
+            >
           </div>
         </div>
       </div>
@@ -122,8 +146,7 @@
       </div>
 
       <!-- END SECTION : FOOTER -->
-
-      <script src="dataPenganten.js"></script>
     </div>
+    <script src="dataPenganten.js"></script>
   </body>
 </html>
